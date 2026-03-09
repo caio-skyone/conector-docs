@@ -103,12 +103,14 @@ source = { virtual = "." }
 dependencies = [
     { name = "mkdocs" },
     { name = "mkdocs-material" },
+    { name = "mkdocs-roamlinks-plugin" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "mkdocs", specifier = "<2.0" },
     { name = "mkdocs-material", specifier = ">=9.7.4" },
+    { name = "mkdocs-roamlinks-plugin", specifier = ">=0.3.2" },
 ]
 
 [[package]]
@@ -281,6 +283,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/79/9b/9b4c96d6593b2a541e1cb8b34899a6d021d208bb357042823d4d2cabdbe7/mkdocs_material_extensions-1.3.1.tar.gz", hash = "sha256:10c9511cea88f568257f960358a467d12b970e1f7b2c0e5fb2bb48cab1928443", size = 11847, upload-time = "2023-11-22T19:09:45.208Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5b/54/662a4743aa81d9582ee9339d4ffa3c8fd40a4965e033d77b9da9774d3960/mkdocs_material_extensions-1.3.1-py3-none-any.whl", hash = "sha256:adff8b62700b25cb77b53358dad940f3ef973dd6db797907c49e3c2ef3ab4e31", size = 8728, upload-time = "2023-11-22T19:09:43.465Z" },
+]
+
+[[package]]
+name = "mkdocs-roamlinks-plugin"
+version = "0.3.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "mkdocs" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d6/15/e8b6740da256d3cdc8873a7067f409763ddf1a8c876296aa955c93cbc62d/mkdocs-roamlinks-plugin-0.3.2.tar.gz", hash = "sha256:aa173e668ed782ff61988b5242034bf7c5f21519a9d75df38e6a4b790a60267e", size = 6022, upload-time = "2023-04-19T11:24:20.776Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1f/d4/6fe9c62bec56212b96607bdc26ee1072518213414d77c4ff878c17c7889c/mkdocs_roamlinks_plugin-0.3.2-py3-none-any.whl", hash = "sha256:5c5892dd077f15150ec7b32fcb4bf9efd305c453c732d722ca7ee0ed0a5dceb9", size = 6388, upload-time = "2023-04-19T11:24:15.569Z" },
 ]
 
 [[package]]

@@ -6,3 +6,5 @@ theme:
     scheme: slate
   favicon: img/favicon.svg
   logo: img/logo.svg
+plugins:
+- roamlinks
