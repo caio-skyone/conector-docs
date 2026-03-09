@@ -1,0 +1,8 @@
+site_name: Conector Docs
+site_url: https://caio-skyone.github.io/conector-docs/
+theme:
+  name: material
+  palette:
+    scheme: slate
+  favicon: img/favicon.svg
+  logo: img/logo.svg
