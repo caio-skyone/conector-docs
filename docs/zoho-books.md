@@ -76,14 +76,16 @@ No Skyone Studio, acesse **API Gateway**, crie um Gateway e uma rota sem autenti
 https://accounts.zoho.com/oauth/v2/auth?scope={scopes}&client_id={client_id}&response_type=code&access_type=offline&redirect_uri={redirect_uri}
 ```
 
-> Use a mesma redirect uri que foi utilizada até agora
+> Use a mesma redirect uri que foi utilizada até agora,
 > scopes representam as permissões obtidas com o token, veja mais sobre eles em [Scopes](https://www.zoho.com/crm/developer/docs/api/v8/scopes.html)
 
 6.  Ao final, você deve ser redirecionado para uma tela com um JSON indicando que seu fluxo foi executado, volte ao fluxo e acesse os logs, na ultima execução do módulo do Zoho Books deve constar:
 
 ![[books-log.png]]
 
-7. Guarde o access_token e refresh_token
+> Caso o refresh_token não apareça no log, certifique-se de ter adicionado access_type=offline na URL de autenticação. Se isso ocorrer após autenticações sucessivas, adicione prompt=consent na URL de autenticação.
+
+7. Adicione os tokens na configuração da conta e marque a caixa **Enviar parâmetros de troca de token como query string**.
 
 ---
 
