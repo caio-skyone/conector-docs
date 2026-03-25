@@ -33,7 +33,7 @@ Opte pelo método que lhe for mais confortável.
 
 No Skyone Studio, acesse **API Gateway**, crie um Gateway e uma rota **sem autenticação**. Essa rota será a sua `redirect_uri`.
 
-![conta-inicial](conta-books-default.png)
+![[conta-books-default.png]]
 
 Para visualizar a URL completa gerada, clique em **Editar a rota** depois de criá-la.
 
