@@ -1,0 +1,924 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://caio-skyone.github.io/conector-docs/callback/studio%20api%20gateway/">
+      
+      
+        <link rel="prev" href="../oauth2postman/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../img/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>Fluxo usando o Skyone Studio - Conector Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fluxo-usando-o-skyone-studio" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Conector Docs" class="md-header__button md-logo" aria-label="Conector Docs" data-md-component="logo">
+      
+  <img src="../../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Conector Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fluxo usando o Skyone Studio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Conector Docs" class="md-nav__button md-logo" aria-label="Conector Docs" data-md-component="logo">
+      
+  <img src="../../img/logo.svg" alt="logo">
+
+    </a>
+    Conector Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bem vindo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mailgun/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mailgun
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../service-now/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service Now
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../twilio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Twilio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Xero Accounting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zoho-analytics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zoho Analytics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zoho-books/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zoho Books
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zoho-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zoho Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callback
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Callback
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contexto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Como usar OAuth2 com callback no Skyone Studio?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oauth2postman/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oauth2postman
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fluxo usando o Skyone Studio
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fluxo usando o Skyone Studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-criar-a-url-de-redirect-no-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Criar a URL de redirect no Studio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-registrar-a-redirect-uri-na-plataforma-de-destino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Registrar a redirect URI na plataforma de destino
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-criar-a-conta-conectada-no-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Criar a conta conectada no Studio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-montar-o-fluxo-de-captura-dos-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Montar o fluxo de captura dos tokens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-realizar-a-autenticacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Realizar a autenticação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-recuperar-os-tokens-nos-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Recuperar os tokens nos logs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-atualizar-a-conta-conectada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Atualizar a conta conectada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fluxo-usando-o-postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fluxo usando o Postman
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consideracoes-gerais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Considerações gerais
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-criar-a-url-de-redirect-no-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Criar a URL de redirect no Studio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-registrar-a-redirect-uri-na-plataforma-de-destino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Registrar a redirect URI na plataforma de destino
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-criar-a-conta-conectada-no-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Criar a conta conectada no Studio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-montar-o-fluxo-de-captura-dos-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Montar o fluxo de captura dos tokens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-realizar-a-autenticacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Realizar a autenticação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-recuperar-os-tokens-nos-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Recuperar os tokens nos logs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-atualizar-a-conta-conectada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Atualizar a conta conectada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fluxo-usando-o-postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fluxo usando o Postman
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consideracoes-gerais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Considerações gerais
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="fluxo-usando-o-skyone-studio">Fluxo usando o Skyone Studio</h1>
+<blockquote>
+<p>Os exemplos a seguir usam o template de conector do Zoho Books. Consulte a documentação específica do conector para detalhes sobre nomes de operações, campos e comportamentos particulares.</p>
+</blockquote>
+<h3 id="1-criar-a-url-de-redirect-no-studio">1. Criar a URL de redirect no Studio</h3>
+<p>No Skyone Studio, acesse <strong>API Gateway</strong>, crie um Gateway e uma rota <strong>sem autenticação</strong>. Essa rota será a sua <code>redirect_uri</code>.</p>
+<p><img alt="conta-books-default.png" src="../../img/callback/conta-books-default.png" /></p>
+<p>Para visualizar a URL completa gerada, clique em <strong>Editar a rota</strong> depois de criá-la.</p>
+<p>Por outro lado, você pode usar um <strong>Webhook</strong> do Studio como receptor. O princípio é o mesmo: qualquer URL acessível publicamente que aceite uma requisição GET com um parâmetro de query pode funcionar como redirect URI, para isso, insira num fluxo o gatilho de <strong>Webhook</strong> e guarde a sua URL.</p>
+<h3 id="2-registrar-a-redirect-uri-na-plataforma-de-destino">2. Registrar a redirect URI na plataforma de destino</h3>
+<p>Essa etapa varia de acordo com a plataforma, consiste em, ao configurar a integração e receber o <strong>Client ID</strong> e <strong>Client Secret</strong>, registrar uma URL que pode ser usada como redirecionamento ou callback, inclua a URL criada no passo anterior.</p>
+<h3 id="3-criar-a-conta-conectada-no-studio">3. Criar a conta conectada no Studio</h3>
+<p>No conector da plataforma alvo, crie uma <strong>conta conectada</strong> preenchendo os campos disponíveis (Host, Porta, Client ID, Client Secret, endpoint de troca de token etc.), mas <strong>deixe os campos de <code>access_token</code> e <code>refresh_token</code> vazios por enquanto</strong>.</p>
+<p><img alt="conta-inicial" src="img/callback/image.png" /></p>
+<blockquote>
+<p>Consulte a documentação do conector específico para saber quais campos são obrigatórios nessa etapa e quais valores utilizar.</p>
+</blockquote>
+<h3 id="4-montar-o-fluxo-de-captura-dos-tokens">4. Montar o fluxo de captura dos tokens</h3>
+<ol>
+<li>Crie uma <strong>integração e um fluxo</strong> no Studio</li>
+</ol>
+<blockquote>
+<p>Caso tenha criado um webhook, utilize o mesmo fluxo</p>
+</blockquote>
+<ol>
+<li>Adicione um gatilho de <strong>API Gateway</strong> e selecione o gateway e a rota criados no passo 1 (desnecessário caso tenha criado com webhook)</li>
+<li>No gatilho, adicione um <strong>parâmetro de query</strong> com o nome <code>code</code></li>
+<li>Adicione o módulo do conector da plataforma alvo e escolha a operação de <strong>obtenção do Access Token</strong> (o nome exato varia por conector; consulte a documentação específica)</li>
+<li>Nos parâmetros da operação, preencha o <strong>Client ID</strong>, o <strong>Client Secret</strong> e a <strong>redirect URI</strong>; para o campo <code>code</code>, arraste o parâmetro de query criado no gatilho</li>
+<li><strong>Ative o fluxo</strong></li>
+</ol>
+<h3 id="5-realizar-a-autenticacao">5. Realizar a autenticação</h3>
+<p>Acesse a URL de autenticação da plataforma no seu navegador. Cada plataforma possui uma URL própria, como essa:</p>
+<pre><code>https://{URL}/auth?scope={scopes}&amp;client_id={client_id}&amp;response_type=code&amp;access_type=offline&amp;redirect_uri={redirect_uri}
+</code></pre>
+<p>Onde:</p>
+<ul>
+<li><code>{plataforma}</code> — domínio específico da plataforma (ex: <code>zoho</code>, <code>xero</code> etc.)</li>
+<li><code>{scopes}</code> — permissões que os tokens devem ter; consulte a documentação da plataforma para os valores corretos</li>
+<li><code>{client_id}</code> — o Client ID registrado no passo 2</li>
+<li><code>{redirect_uri}</code> — a URL do gatilho criado no passo 1</li>
+</ul>
+<p>Ao fazer login e autorizar o aplicativo, você será redirecionado para a sua rota do Studio. O fluxo será executado automaticamente.</p>
+<h3 id="6-recuperar-os-tokens-nos-logs">6. Recuperar os tokens nos logs</h3>
+<p>Volte ao fluxo no Studio e acesse os <strong>logs da última execução</strong>. Na execução do módulo de obtenção do token, você verá o <code>access_token</code> e o <code>refresh_token</code> retornados pela plataforma.</p>
+<blockquote>
+<p>Caso o <code>refresh_token</code> não apareça no log, verifique se o parâmetro correto para emissão offline foi incluído na URL de autenticação (passo 5).</p>
+</blockquote>
+<p><img alt="log" src="../../img/zoho-books/books-log.png" /></p>
+<h3 id="7-atualizar-a-conta-conectada">7. Atualizar a conta conectada</h3>
+<p>Com os tokens em mãos, volte à conta conectada criada no passo 3 e preencha os campos de <code>access_token</code> e <code>refresh_token</code>.</p>
+<blockquote>
+<p>Algumas plataformas exigem configurações adicionais na conta após esse passo, como marcar uma opção de envio de parâmetros via query string ou adicionar headers específicos. Consulte a documentação do conector específico.</p>
+<p>Após concluir, caso necessário, considere <strong>desativar ou excluir o fluxo de captura</strong> para evitar que os tokens fiquem expostos nos logs de futuras execuções.</p>
+</blockquote>
+<hr />
+<h2 id="fluxo-usando-o-postman">Fluxo usando o Postman</h2>
+<p>[!!!]</p>
+<hr />
+<h2 id="consideracoes-gerais">Considerações gerais</h2>
+<ul>
+<li>O <code>access_token</code> tem validade curta (geralmente minutos ou horas). O Studio utiliza o <code>refresh_token</code> para renová-lo automaticamente — por isso ele é indispensável.</li>
+<li>O <code>refresh_token</code> pode ter validade longa ou indefinida, mas <strong>pode ser invalidado</strong> se o usuário revogar o acesso ou se o app ficar inativo por muito tempo. Nesse caso, o processo de obtenção dos tokens deve ser repetido.</li>
+<li>Plataformas diferentes usam <strong>escopos com sintaxes distintas</strong> (separados por espaço, vírgula ou em formato hierárquico). Consulte a documentação oficial da plataforma para montar a lista correta.</li>
+<li>O <strong>Client ID e Client Secret nunca devem ser compartilhados</strong> fora do ambiente de configuração do conector.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

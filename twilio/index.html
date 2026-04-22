@@ -1,0 +1,1808 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://caio-skyone.github.io/conector-docs/twilio/">
+      
+      
+        <link rel="prev" href="../service-now/">
+      
+      
+        <link rel="next" href="../xero/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../img/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>Twilio - Conector Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#contexto" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Conector Docs" class="md-header__button md-logo" aria-label="Conector Docs" data-md-component="logo">
+      
+  <img src="../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Conector Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Twilio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Conector Docs" class="md-nav__button md-logo" aria-label="Conector Docs" data-md-component="logo">
+      
+  <img src="../img/logo.svg" alt="logo">
+
+    </a>
+    Conector Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bem vindo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mailgun/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mailgun
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../service-now/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service Now
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Twilio
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Twilio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contexto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autenticação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Autenticação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#username-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Username &amp; Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentacao-oficial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentação oficial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Xero Accounting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zoho-analytics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zoho Analytics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zoho-books/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zoho Books
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zoho-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zoho Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callback
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Callback
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../callback/contexto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Como usar OAuth2 com callback no Skyone Studio?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../callback/oauth2postman/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oauth2postman
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../callback/studio%20api%20gateway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fluxo usando o Skyone Studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contexto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autenticação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Autenticação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#username-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Username &amp; Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentacao-oficial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentação oficial
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Twilio</h1>
+
+<h2 id="contexto">Contexto</h2>
+<p><a href="https://www.twilio.com/docs">Twilio</a> é uma plataforma de comunicações na nuvem que oferece APIs RESTful para construir aplicações de voz, mensagem, vídeo e muito mais. A coleção disponibiliza recursos de alto nível que permitem criar, gerenciar e monitorar contas, nós de endereço, endereços de SMS, aplicações e números de telefone programaticamente.</p>
+<p>O público-alvo principal são desenvolvedores, engenheiros de integração e equipes de produto que precisam incorporar funcionalidades de comunicação em seus serviços. A API serve tanto para empresas que desejam manter controle total de suas infraestruturas de comunicação quanto para startups que buscam escalabilidade e automação.</p>
+<p>Entre os principais recursos oferecidos, estão a criação e gerenciamento de subcontas, a provisão de endereços de telefonia (voIP, móvel, nacional, toll‑free), a criação de aplicações para chamadas ou campanhas de mensagem, a compra de números de telefone por país ou zona geográfica específica, a consulta de saldo de contas, bem como a criação, consulta e exclusão de chamadas de saída para números de telefone e endpoints SIP. Esses endpoints são acessados por requisições HTTP simples e retornam respostas em JSON/XML, facilitando a integração em diversas linguagens e frameworks de aplicação.</p>
+<hr />
+<h2 id="autenticacao">Autenticação</h2>
+<p><strong>Tipo:</strong> Basic Auth (usuário e senha)</p>
+<p><strong>Configuração da conta conectada:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Variável</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>password</td>
+<td>Auth Token/API Key Secret</td>
+</tr>
+<tr>
+<td>username</td>
+<td>Account SID/API Key SID</td>
+</tr>
+</tbody>
+</table>
+<h3 id="username-password">Username &amp; Password</h3>
+<p>Existem três tipos diferentes de credenciais do Twilio: Credenciais de conta, credenciais de conta de teste e credenciais de API Key, a recomendação é usar API Keys para controle das permissões, observe que certas operações podem não funcionar a depender das permissões escolhidas.</p>
+<blockquote>
+<p><a href="https://www.twilio.com/docs/iam/credentials/api">Saiba mais sobre credenciais</a></p>
+</blockquote>
+<p>Na página inicial de uma conta no console do Twilio, desça até encontrar a seção abaixo</p>
+<p><img alt="twilio-tokens.png" src="../img/twilio/twilio-tokens.png" /></p>
+<p>Aqui, é possível usar os dados da conta (Account SID e Auth token) como, respectivamente, usuário e senha na autenticação do Skyone Studio, permitindo utilizar qualquer operação da API que a conta tenha acesso. Em <strong>Go to API Keys</strong>, você terá acesso ao painel de criação de API Keys e às credenciais de teste. </p>
+<hr />
+<h2 id="operacoes">Operações</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nome da Operação</th>
+<th style="text-align: left;">Método</th>
+<th style="text-align: left;">Descrição da Função</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Create a new Twilio Subaccount from the account making the request</strong></td>
+<td style="text-align: left;"><strong>POST</strong></td>
+<td style="text-align: left;">Criar uma subconta Twilio a partir da conta que faz o pedido.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Fetch the account specified by the provided Account Sid</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Recupera os detalhes da conta indicada pelo Sid do usuário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Modify the properties of a given Account</strong></td>
+<td style="text-align: left;"><strong>POST</strong></td>
+<td style="text-align: left;">Altera as propriedades de uma conta específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Create Address</strong></td>
+<td style="text-align: left;"><strong>POST</strong></td>
+<td style="text-align: left;">Cria um novo endereço para a conta especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>List Address</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Retorna a lista de endereços vinculados à conta especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Delete Address</strong></td>
+<td style="text-align: left;"><strong>DELETE</strong></td>
+<td style="text-align: left;">Remove permanentemente o endereço identificado por Sid para a conta especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Fetch Address</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Recupera os detalhes de um endereço existente na conta especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Update Address</strong></td>
+<td style="text-align: left;"><strong>POST</strong></td>
+<td style="text-align: left;">Atualiza o endereço de uma conta identificada pelo ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>List Dependent Phone Number</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Lista todos os números de telefone dependentes associados a um endereço específico do usuário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Create a new application within your account</strong></td>
+<td style="text-align: left;"><strong>POST</strong></td>
+<td style="text-align: left;">Criar um novo aplicativo em sua conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Retrieve a list of applications representing an application within the requesting account</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Recupera a lista de aplicativos da conta requisitada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Delete the application by the specified application sid</strong></td>
+<td style="text-align: left;"><strong>DELETE</strong></td>
+<td style="text-align: left;">Apagar aplicação usando o SID especificado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch the application specified by the provided sid</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Buscar o aplicativo especificado pelo SID fornecido.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Updates the application's properties</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza as propriedades do aplicativo.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of an authorized-connect-app</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera uma instância de uma aplicação connect autorizada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of authorized-connect-apps belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Retorna a lista de apps autorizados da conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Available Phone Number Country</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Listar números de telefone disponíveis para a conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch Available Phone Number Country</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Obtém números de telefone disponíveis em um país para uma conta específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Available Phone Number Local</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Listar números de telefone local disponíveis em um país específico.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Available Phone Number Machine To Machine</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista números de telefone M2M disponíveis no país informado para a conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Available Phone Number Mobile</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista números móveis disponíveis para compra em determinado país, retornando informação de números ainda livres.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Available Phone Number National</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Listar números nacionais disponíveis no país.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Available Phone Number Shared Cost</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Obter lista de números de telefone disponíveis com recurso de custo compartilhado no país especificado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Available Phone Number Toll Free</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista números de telefone gratuitos disponíveis na sua conta para o país especificado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Available Phone Number Voip</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista de números VoIP disponíveis por código de país.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch the balance for an Account based on Account Sid. Balance changes may not be reflected immediately. Child accounts do not contain balance information</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera saldo de conta pelo SID; alterações demoram e subcontas não exibem saldo.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a new outgoing call to phones, SIP-enabled endpoints or Twilio Client connections</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar chamada de saída para telefones, endpoints SIP ou conexões Twilio Client.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieves a collection of calls made to and from your account</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera uma lista de chamadas feitas para e a partir da sua conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a Call record from your account. Once the record is deleted, it will no longer appear in the API and Account Portal logs.</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Exclui chamada da conta; removendo do log e da API.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch the call specified by the provided Call SID</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Busca a chamada específica pelo Call SID fornecido.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Initiates a call redirect or terminates a call</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Inicia redirecionamento ou encerra chamada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of all events for a call.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Liste todos os eventos de uma chamada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch Call Notification</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera os detalhes de uma notificação de chamada específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Call Notification</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Obtém a lista de notificações configuradas para a chamada específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a recording for the call</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Cria gravação para a chamada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of recordings belonging to the call used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera gravações vinculadas à chamada solicitada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Changes the status of the recording to paused, stopped, or in-progress. Note: Pass Twilio.CURRENT instead of recording sid to reference current active recording.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Muda status da gravação: pausa, parada ou em andamento; use Twilio.CURRENT para gravação ativa.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of a recording for a call</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupere uma gravação de uma chamada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a recording from your account</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Excluir a gravação especificada em sua conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">create an instance of payments. This will start a new payments session</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Inicia uma nova sessão de pagamentos na chamada especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">update an instance of payments with different phases of payment flows.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza um pagamento com diferentes fases do fluxo de pagamento.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a Transcription</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar transcrição de uma chamada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stop a Transcription using either the SID of the Transcription resource or the name used when creating the resource</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Finaliza a transcrição usando o SID da transcrição ou o nome definido na criação.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a Siprec</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar Siprec para uma chamada específica em uma conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stop a Siprec using either the SID of the Siprec resource or the name used when creating the resource</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Encerra uma Siprec usando seu SID ou o nome definido na criação.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a Stream</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar um stream de áudio para a chamada especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stop a Stream using either the SID of the Stream resource or the name used when creating the resource</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Interrompe um stream usando seu SID ou o nome definido na criação.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a new User Defined Message for the given Call SID.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar uma nova mensagem definida pelo usuário para o Call SID especificado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subscribe to User Defined Messages for a given Call SID.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Inscrever em Mensagens Definidas pelo Usuário para um Call SID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a specific User Defined Message Subscription.</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Deleta a assinatura específica de mensagem definida pelo usuário.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of a conference</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera os dados de uma conferência específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update Conference</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza parâmetros da conferência usando seu Sid.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of recordings belonging to the call used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera gravações vinculadas à chamada solicitada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Changes the status of the recording to paused, stopped, or in-progress. Note: To use Twilio.CURRENT, pass it as recording sid.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Altera status da gravação (pausa, parada, em andamento) usando Twilio.CURRENT no SID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of a recording for a call</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupere uma gravação de uma chamada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a recording from your account</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Excluir a gravação especificada em sua conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of a participant</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera os detalhes de um participante de conferência.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update the properties of the participant</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza as propriedades do participante da conferência.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kick a participant from a given conference</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Remover participante de uma conferência específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create Participant</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar participante em conferência.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of participants belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Listar participantes da conta solicitante.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of conferences belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera a lista de conferências associadas à conta utilizada na solicitação.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of a connect-app</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Obter detalhes de uma aplicação conectada pelo identificador.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update a connect-app with the specified parameters</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza connect-app com parâmetros especificados.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete an instance of a connect-app</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Apagar uma instância de connect‑app da conta selecionada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of connect-apps belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista de connect‑apps associados à conta usada na requisição.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update an incoming-phone-number instance.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza a instância de número de telefone recebido.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an incoming-phone-number belonging to the account used to make the request.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera o número de telefone entrada associado à conta utilizada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a phone-numbers belonging to the account used to make the request.</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Exclui o número de telefone associado à conta do solicitante.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of an Add-on installation currently assigned to this Number.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recuperar a instalação de Add‑on atualmente atribuída a este número.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Remove the assignment of an Add-on installation from the Number specified.</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Remove o mapeamento de add‑on a partir do número especificado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of an Extension for the Assigned Add-on.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera uma instância de Extensão vinculada ao add-on atribuído.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of Extensions for the Assigned Add-on.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupere a lista de extensões do Add-on atribuído.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of Add-on installations currently assigned to this Number.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista de add‑ons instalados no número.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Assign an Add-on installation to the Number specified.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atribui uma instalação de complemento ao número especificado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Incoming Phone Number Local</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera a lista de números de telefone locais associados à conta especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create Incoming Phone Number Local</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Cria um novo número de telefone local para entrada de chamadas.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Incoming Phone Number Mobile</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista os números de telefone móvel recebíveis para a conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create Incoming Phone Number Mobile</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Cria um número de telefone móvel vinculado à conta para chamadas recebidas.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Incoming Phone Number Toll Free</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista números de telefone de entrada gratuitos.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create Incoming Phone Number Toll Free</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar número de telefone gratuito na conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of incoming-phone-numbers belonging to the account used to make the request.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Obtém a lista de números de telefone de entrada associados à conta atual.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Purchase a phone-number for the account.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Adquire um número de telefone para a sua conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch Key</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera os detalhes da chave identificada pelo Sid da conta especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update Key</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza chave de API na conta especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete Key</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Exclui uma chave específica de uma conta usando o id Sid.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Key</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista todas as chaves de API da conta {AccountSid}.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create New Key</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Cria uma nova chave de API para a conta indicada no caminho.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete the Media resource.</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Excluir recurso de mídia.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch a single Media resource associated with a specific Message resource</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Buscar um recurso de mídia associado a uma mensagem específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Read a list of Media resources associated with a specific Message resource</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista de mídias associadas a uma mensagem específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create Message Feedback to confirm a tracked user action was performed by the recipient of the associated Message</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar feedback de mensagem para confirmar ação do destinatário.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Deletes a Message resource from your account</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Exclui a mensagem do recurso na sua conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch a specific Message</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera uma mensagem específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update a Message resource (used to redact Message body text and to cancel not-yet-sent messages)</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza mensagem, podendo redigir corpo ou cancelar envio pendente</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch a specific member from the queue</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera um membro específico de uma fila.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dequeue a member from a queue and have the member's call begin executing the TwiML document at that URL</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Remover um participante da fila e executar o TwiML da chamada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve the members of the queue</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera os membros da fila.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of a queue identified by the QueueSid</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recuperar a fila identificada por QueueSid.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update the queue with the new parameters</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza fila com novos parâmetros.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Remove an empty queue</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Remove uma fila vazia.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Send a message</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Envio de mensagem para conta {AccountSid} via API Twilio.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of Message resources associated with a Twilio Account</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Obtém a lista de mensagens vinculadas à conta Twilio.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a new Signing Key for the account making the request.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Crie uma nova chave de assinatura para a conta que faz a solicitação.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Signing Key</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista todas as chaves de assinatura disponíveis para a conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch a notification belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recuperar notificação associada à conta solicitante.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of notifications belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera a lista de notificações associadas à conta que faz a requisição.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an outgoing-caller-id belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recuperar um número de identificação de chamador de saída associado à conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Updates the caller-id</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza o Caller ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete the caller-id specified from the account</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Excluir o identificador de chamada especificado na conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of outgoing-caller-ids belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera lista de IDs de chamadas externas pertencentes à conta usada na requisição.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create Validation Request</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Solicita a criação e validação de um número de remetente para chamadas saídas.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of queues belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera lista de filas associadas à conta usada na solicitação.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a queue</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar um novo grupo de chamadas (fila) para a conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of a recording</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera os detalhes de uma gravação específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a recording from your account</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Excluir a gravação especificada em sua conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of an AddOnResult</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Obter uma instância do AddOnResult.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a result and purge all associated Payloads</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Elimina resultado e remove todos os Payloads associados.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of a result payload</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera uma instância de payload de resultado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a payload from the result along with all associated Data</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Excluir payload e dados vinculados do resultado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of a result payload</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera uma instância de payload de resultado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of payloads belonging to the AddOnResult</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Obter lista de payloads do AddOnResult.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of results belonging to the recording</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Retorna a lista de resultados associados à gravação.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch Recording Transcription</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Obter transcrição de gravação.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete Recording Transcription</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Exclui a transcrição específica de uma gravação de conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">List Recording Transcription</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera todas as transcrições de uma gravação específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of recordings belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera a lista de gravações da conta usada na solicitação</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of a short code</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Obter informações de um shortcode.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update a short code with the following parameters</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza um short code com os parâmetros indicados.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of short-codes belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera a lista de short-codes associados à conta que fez a requisição.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch Signing Key</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Retorna os detalhes da chave de assinatura identificada pelo SID na conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update Signing Key</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza uma chave de assinatura existente em uma conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete Signing Key</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Exclui uma chave de assinatura de conta especificada por SID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a new credential list mapping resource</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar um novo recurso de mapeamento de lista de credenciais.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of credential list mappings belonging to the domain used in the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera mapeamentos de credenciais do domínio na solicitação</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch a specific instance of a credential list mapping</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recuperar instância específica de mapeamento de lista de credenciais</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a credential list mapping from the requested domain</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Excluir mapeamento de lista de credenciais no domínio solicitado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a new IP Access Control List mapping</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar nova associação de lista de controle de IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of IP Access Control List mappings belonging to the domain used in the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera a lista de mapeamentos da lista de controle de IP do domínio requisitado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch a specific instance of an IP Access Control List mapping</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera uma instância específica de mapeamento de Lista de Controle de IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete an IP Access Control List mapping from the requested domain</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Exclui a associação de lista de controle de IP do domínio solicitado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a new credential list mapping resource</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar um novo recurso de mapeamento de lista de credenciais.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of credential list mappings belonging to the domain used in the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera mapeamentos de credenciais do domínio na solicitação</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch a specific instance of a credential list mapping</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recuperar instância específica de mapeamento de lista de credenciais</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a credential list mapping from the requested domain</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Excluir mapeamento de lista de credenciais no domínio solicitado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a CredentialListMapping resource for an account.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar mapeamento de credenciais para conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Read multiple CredentialListMapping resources from an account.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Ler múltiplos recursos CredentialListMapping de uma conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch a single CredentialListMapping resource from an account.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera uma CredentialListMapping específica de um domínio em uma conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a CredentialListMapping resource from an account.</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Exclui um mapeamento de lista de credenciais de uma conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an IpAccessControlListMapping resource.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupere um recurso de IpAccessControlListMapping.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete an IpAccessControlListMapping resource.</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Excluir um recurso de mapeamento de lista de controle de acesso IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a new IpAccessControlListMapping resource.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Cria um novo recurso de mapeamento de lista de controle de acesso a IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of IpAccessControlListMapping resources.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera uma lista de recursos IpAccessControlListMapping.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch an instance of a Domain</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Buscar instância de domínio.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update the attributes of a domain</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza os atributos de um domínio SIP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete an instance of a Domain</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Remover a instância de um domínio do endereço SIP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of credentials.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera a lista de credenciais.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a new credential resource.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Cria um novo recurso de credencial.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch a single credential.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera uma credencial única.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update a credential resource.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualizar recurso de credencial.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a credential resource.</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Remove uma credencial de uma lista de credenciais em uma conta específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Get a Credential List</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Obtém uma lista de credenciais da conta SIP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update a Credential List</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza a lista de credenciais de uma conta SIP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete a Credential List</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Excluir uma lista de credenciais do SIP da conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Get All Credential Lists</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera todas as listas de credenciais associadas à conta SIP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a Credential List</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Cria uma lista de credenciais para o endpoint SIP da conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of domains belonging to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recuperar lista de domínios que pertencem à conta que fez a requisição.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a new Domain</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Cria um novo domínio.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Retrieve a list of IpAccessControlLists that belong to the account used to make the request</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Lista os IpAccessControlLists da conta atual.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a new IpAccessControlList resource</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Cria um novo recurso IpAccessControlList.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fetch a specific instance of an IpAccessControlList</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera a instância específica de uma IpAccessControlList.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rename an IpAccessControlList</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Renomear uma lista de controle de acesso IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete an IpAccessControlList from the requested account</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Remover uma lista de controle de IP da conta solicitada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Read multiple IpAddress resources.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Recupera múltiplas IPAddress de uma lista de controle de acesso SIP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Create a new IpAddress resource.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Criar um novo recurso de endereço IP em um IPACL.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Read one IpAddress resource.</td>
+<td style="text-align: left;">GET</td>
+<td style="text-align: left;">Buscar único recurso IpAddress em lista de controle de acesso SIP.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Update an IpAddress resource.</td>
+<td style="text-align: left;">POST</td>
+<td style="text-align: left;">Atualiza um endereço IP em uma lista de controle de acesso.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Delete an IpAddress resource.</td>
+<td style="text-align: left;">DELETE</td>
+<td style="text-align: left;">Excluir um recurso de endereço IP.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Create a new token for ICE servers</strong></td>
+<td style="text-align: left;"><strong>POST</strong></td>
+<td style="text-align: left;">Cria um novo token para servidores ICE.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Fetch an instance of a Transcription</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Recupera os detalhes de uma transcrição específica de uma conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Delete a transcription from the account used to make the request</strong></td>
+<td style="text-align: left;"><strong>DELETE</strong></td>
+<td style="text-align: left;">Excluir uma transcrição da conta usada na solicitação.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Retrieve a list of transcriptions belonging to the account used to make the request</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Recupera a lista de transcrições da conta usada na solicitação.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Retrieve a list of usage-records belonging to the account used to make the request</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Recupera a lista de registros de uso da conta usada na solicitação.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>List Usage Record All Time</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Lista todos os registros de uso de conta (All Time).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>List Usage Record Daily</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Lista registros diários de uso da conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>List Usage Record Last Month</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Listar registros de uso do último mês da conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>List Usage Record Monthly</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Lista registros mensais de uso da conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>List Usage Record This Month</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Lista os registros de uso deste mês para a conta especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>List Usage Record Today</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Listar registros de uso de hoje para a conta especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>List Usage Record Yearly</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Retorna registros de uso anual para a conta especificada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>List Usage Record Yesterday</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Lista os registros de uso de ontem para a conta.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Fetch and instance of a usage-trigger</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Buscar uma instância de um gatilho de uso.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Update an instance of a usage trigger</strong></td>
+<td style="text-align: left;"><strong>POST</strong></td>
+<td style="text-align: left;">Atualiza uma instância de um gatilho de uso.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Delete Usage Trigger</strong></td>
+<td style="text-align: left;"><strong>DELETE</strong></td>
+<td style="text-align: left;">Exclui o gatilho de uso de uma conta específica.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Create a new UsageTrigger</strong></td>
+<td style="text-align: left;"><strong>POST</strong></td>
+<td style="text-align: left;">Criar novo Gatilho de Uso.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Retrieve a list of usage-triggers belonging to the account used to make the request</strong></td>
+<td style="text-align: left;"><strong>GET</strong></td>
+<td style="text-align: left;">Obtém a lista de desencadeadores de uso associados à conta autenticada.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="documentacao-oficial">Documentação oficial</h2>
+<p><a href="https://www.twilio.com/docs">Documentação Twilio</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
