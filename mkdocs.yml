@@ -8,6 +8,8 @@ theme:
   logo: img/logo.svg
 plugins:
 - roamlinks
+hooks:
+- hooks/iac_assets.py
 nav:
 - Início: index.md
 - Conectores:
