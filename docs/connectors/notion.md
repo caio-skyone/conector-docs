@@ -38,7 +38,7 @@ Consulte a [Documentação do Notion](https://developers.notion.com/guides/get-s
 
 #### Procedimento do OAuth2 do Notion Public
 
-Siga a [documentação sobre OAuth2 com callback](callback/contexto.md) para conseguir o primeiro access_token e o refresh_token da API do Notion, com os requisitos adicionais:
+Siga a [documentação sobre OAuth2 com callback](../dev-flow/callback/contexto.md) para conseguir o primeiro access_token e o refresh_token da API do Notion, com os requisitos adicionais:
 
 A API do Notion exige autenticação Basic nos endpoints do OAuth, onde o usuário é o seu client_id e a senha o seu client_secret, o **Postman** permite usar o Basic facilmente
 substituindo a autenticação nesses endpoints em específico. No Studio, a operação **OAuth - Create a token** deverá receber a string do Basic em Base64, os seguintes comandos

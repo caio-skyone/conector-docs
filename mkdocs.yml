@@ -8,3 +8,20 @@ theme:
   logo: img/logo.svg
 plugins:
 - roamlinks
+nav:
+- Início: index.md
+- Conectores:
+  - Databricks: connectors/databricks.md
+  - GitHub: connectors/github.md
+  - iFood: connectors/ifood.md
+  - Mailgun: connectors/mailgun.md
+  - Notion: connectors/notion.md
+  - Service Now: connectors/service-now.md
+  - Twilio: connectors/twilio.md
+  - Xero: connectors/xero.md
+  - Zoho Books: connectors/zoho-books.md
+  - Zoho Projects: connectors/zoho-projects.md
+- Fluxo de Desenvolvimento:
+  - Callback OAuth2:
+    - Contexto: dev-flow/callback/contexto.md
+    - Postman: dev-flow/callback/oauth2postman.md

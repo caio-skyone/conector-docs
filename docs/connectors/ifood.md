@@ -35,7 +35,7 @@ Conceitos comuns: **merchant** (loja), **interruption** (pausa no recebimento), 
 | Refresh Token | {{refresh_token}} |
 | Endpoint de troca de token | `https://merchant-api.ifood.com.br/authentication/v1.0/oauth/token` |
 
- Consulte [a documentação](https://developer.ifood.com.br/pt-BR/docs/guides/modules/authentication/intro) para informações sobre como obter as credenciais. Note que o método de aplicação centralizada não necessita de um Callback, caso deseje usar o método de aplicação distribuída, será necessário usar um [callback](callback/contexto.md).
+ Consulte [a documentação](https://developer.ifood.com.br/pt-BR/docs/guides/modules/authentication/intro) para informações sobre como obter as credenciais. Note que o método de aplicação centralizada não necessita de um Callback, caso deseje usar o método de aplicação distribuída, será necessário usar um [callback](../dev-flow/callback/contexto.md).
 
 ---
 
