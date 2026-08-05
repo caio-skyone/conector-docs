@@ -111,13 +111,15 @@ git commit -m "Rename project from conector-docs to studio-templates"
 - Move: `docs/service-now.md` → `docs/connectors/service-now.md`
 - Move: `docs/twilio.md` → `docs/connectors/twilio.md`
 - Move: `docs/xero.md` → `docs/connectors/xero.md`
-- Move: `docs/zoho-analytics.md` → `docs/connectors/zoho-analytics.md`
 - Move: `docs/zoho-books.md` → `docs/connectors/zoho-books.md`
 - Move: `docs/zoho-projects.md` → `docs/connectors/zoho-projects.md`
 - Move: `docs/callback/contexto.md` → `docs/dev-flow/callback/contexto.md`
 - Move: `docs/callback/oauth2postman.md` → `docs/dev-flow/callback/oauth2postman.md`
-- Move: `docs/callback/studio api gateway.md` → `docs/dev-flow/callback/studio api gateway.md`
 - Modify: `mkdocs.yml` (add explicit `nav:`)
+
+> `docs/zoho-analytics.md` and `docs/callback/studio api gateway.md` were
+> already removed in a prior cleanup commit (broken links/image with no
+> fix available) — they no longer exist and are not part of this move.
 
 **Interfaces:** N/A (file moves + nav config).
 
@@ -133,7 +135,6 @@ git mv docs/notion.md docs/connectors/notion.md
 git mv docs/service-now.md docs/connectors/service-now.md
 git mv docs/twilio.md docs/connectors/twilio.md
 git mv docs/xero.md docs/connectors/xero.md
-git mv docs/zoho-analytics.md docs/connectors/zoho-analytics.md
 git mv docs/zoho-books.md docs/connectors/zoho-books.md
 git mv docs/zoho-projects.md docs/connectors/zoho-projects.md
 ```
@@ -161,14 +162,12 @@ nav:
   - Service Now: connectors/service-now.md
   - Twilio: connectors/twilio.md
   - Xero: connectors/xero.md
-  - Zoho Analytics: connectors/zoho-analytics.md
   - Zoho Books: connectors/zoho-books.md
   - Zoho Projects: connectors/zoho-projects.md
 - Fluxo de Desenvolvimento:
   - Callback OAuth2:
     - Contexto: dev-flow/callback/contexto.md
     - Postman: dev-flow/callback/oauth2postman.md
-    - Studio API Gateway: dev-flow/callback/studio api gateway.md
 ```
 
 (O item **IAC** será adicionado à nav na Task 4, depois que `docs/iac-viewer.md` existir.)
