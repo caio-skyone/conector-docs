@@ -214,3 +214,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+.toolkit-hub.local.yaml
+
+# >>> skytk:managed (gerado de .toolkit-hub.yaml — não edite à mão) >>>
+/.claude/skills/studio-connector-account/SKILL.md
+/.claude/skills/studio-connector-build/SKILL.md
+/.claude/skills/studio-connector-document/SKILL.md
+/.claude/skills/studio-connector-plan/SKILL.md
+/.claude/skills/studio-connector-publish/SKILL.md
+/.claude/skills/studio-connector-shared/auth-config.md
+/.claude/skills/studio-connector-shared/authoring-rules.md
+/.claude/skills/studio-connector-shared/doc-template.md
+/.claude/skills/studio-connector-shared/iac-extract.md
+/.claude/skills/studio-connector-shared/template-pattern.md
+/.mcp.json
+# <<< skytk:managed <<<

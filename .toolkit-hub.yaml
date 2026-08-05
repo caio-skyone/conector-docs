@@ -1,0 +1,46 @@
+version: 1
+toolkits:
+  toolkit-studio-connectors:
+    version: v0.2.0
+    sha: 863e44a60dc0da8239730e51d366a8af009f6fd7
+    scope: local
+    installed_at: '2026-08-05T12:54:40.283760Z'
+    files:
+      - dst: .mcp.json
+        sha256: 7db2f0bbc9f55abb3aa93e519fe2c365cb32df9d66d6bda814ebbe40f098ec4f
+        mode: text
+      - dst: .claude/skills/studio-connector-plan/SKILL.md
+        sha256: 860e71bcc66be0a908e0c9c0560fc60c3d9bb141a3436ab3cabb5f7b630ae902
+        mode: text
+      - dst: .claude/skills/studio-connector-build/SKILL.md
+        sha256: bf40736cbea95958de444ac7c0faa1828dea07c3f56de5890163cbd801f18bdf
+        mode: text
+      - dst: .claude/skills/studio-connector-publish/SKILL.md
+        sha256: 808dab673c207944fa561a1a94672bde58778c598d92db463c12bda72b9beed0
+        mode: text
+      - dst: .claude/skills/studio-connector-account/SKILL.md
+        sha256: 2be0bb1b1e96653441249f3bdbb046b51c613c26b008d38dd478d34b87e9175f
+        mode: text
+      - dst: .claude/skills/studio-connector-document/SKILL.md
+        sha256: cf06418d7d0f2b585561f322c907f698a84333b53ff41d3055c08fd68329cc1c
+        mode: text
+      - dst: .claude/skills/studio-connector-shared/auth-config.md
+        sha256: 1e70977145381e44538d1bc233b1ab7d026d911f168c803a91e1ace1712bd6b8
+        mode: text
+      - dst: .claude/skills/studio-connector-shared/authoring-rules.md
+        sha256: 951baf55f3bf3273e34af467919144caab2795746701672ee2bb6d7b596a856e
+        mode: text
+      - dst: .claude/skills/studio-connector-shared/doc-template.md
+        sha256: 3f251b9c409cbe5efcf3edc8a1fc11a33a27562f5bdb2ba06c281b152bf91066
+        mode: text
+      - dst: .claude/skills/studio-connector-shared/iac-extract.md
+        sha256: 79fba0f100cf5bb772eb3da109e95084e478c587abcc290b200af4cb1812a417
+        mode: text
+      - dst: .claude/skills/studio-connector-shared/template-pattern.md
+        sha256: c3b71640b6db924a4bfc8e78bf6f00fc5d9971df7ea00745ceb32b1518d4da1b
+        mode: text
+    post_install: []
+    installed_as: direct
+    post_install_sha256: 
+      4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+    dependencies: []
