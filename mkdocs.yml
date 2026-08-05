@@ -1,5 +1,5 @@
-site_name: Conector Docs
-site_url: https://caio-skyone.github.io/conector-docs/
+site_name: Studio Templates
+site_url: https://caio-skyone.github.io/studio-templates/
 theme:
   name: material
   palette:
