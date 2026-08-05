@@ -14,7 +14,7 @@
 - Nenhuma página de conector (`docs/connectors/*.md`) deve linkar para `docs/iac-viewer.md`.
 - `iac/` não deve ser duplicada manualmente dentro de `docs/`; a injeção no build é feita só pelo hook.
 - Manter `docs/callback/` com o mesmo conteúdo, apenas movida para `docs/dev-flow/callback/` (sem reescrever texto).
-- Imagens usam sintaxe wikilink (`![[arquivo.png]]`) resolvida pelo plugin `roamlinks` por nome de arquivo em toda a árvore de `docs/` — mover arquivos de página não quebra esses links, mas confirmar com o build.
+- Imagens usam sintaxe wikilink (colchetes duplos ao redor do nome do arquivo de imagem) resolvida pelo plugin `roamlinks` por nome de arquivo em toda a árvore de `docs/` — mover arquivos de página não quebra esses links, mas confirmar com o build.
 
 ---
 
