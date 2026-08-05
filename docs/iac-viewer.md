@@ -152,7 +152,7 @@ Selecione um conector para inspecionar o JSON de IAC exportado.
       return;
     }
     status.textContent = 'Carregando ' + slug + '…';
-    fetch('../iac-data/' + slug + '.json')
+    fetch('../iac-data/' + encodeURIComponent(slug) + '.json')
       .then(function (res) { return res.json(); })
       .then(function (data) {
         currentData = { __slug: slug, value: data };

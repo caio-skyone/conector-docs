@@ -24,5 +24,5 @@ def on_post_build(config, **kwargs):
             slugs.append(json_path.stem)
 
     (out_dir / "index.json").write_text(
-        json.dumps(slugs, ensure_ascii=False, indent=2)
+        json.dumps(slugs, ensure_ascii=False, indent=2), encoding="utf-8"
     )

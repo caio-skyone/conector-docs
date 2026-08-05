@@ -1,10 +1,13 @@
 # Bem vindo
 
-Repositório de documentações markdown dos templates de conector do Skyone Studio
+Documentação e fluxo de desenvolvimento dos templates do Skyone Studio —
+conectores REST e, futuramente, outros tipos de template.
 
-## Fluxo de incremento das documentações
+Este site reúne:
 
-Crie a sua branch com o nome da plataforma alvo -> Adicione o arquivo markdown da plataforma alvo -> merge na main quando a documentação estiver pronta -> github actions inicia o novo deploy da documentação
+- **Conectores** — documentação de cada conector publicado
+- **Fluxo de Desenvolvimento** — guias de apoio ao desenvolvimento de templates (ex: OAuth2/callback)
+- **IAC** — visualizador dos JSONs de IAC exportados por conector
 
 ## Comandos úteis
 
