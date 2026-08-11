@@ -12,8 +12,6 @@ Este template cobre **276 operações** em 64 domínios, agrupadas em cinco bloc
 **Consumo (usage-based):** Billing Meters, Meter Events, Meter Event Adjustments e Summaries.
 **Operação e antifraude:** Events, Webhook Endpoints, Radar (Value Lists, Value List Items, Early Fraud Warnings), Reviews, Files, File Links.
 
-**Fora do escopo deste template:** Issuing, Terminal, Treasury, Financial Connections, Identity, Stripe Tax (`/v1/tax/*`), Climate, Crypto, Sigma, Reporting, Apps, Entitlements e Forwarding.
-
 ## Conceitos Fundamentais
 
 ### Objetos e IDs com prefixo
@@ -50,14 +48,11 @@ A Stripe autentica com a **secret key** da conta enviada como Bearer Token. A cr
 
 O valor de `token` é a secret key da sua conta Stripe (`sk_live_...` ou `sk_test_...`), obtida em **Developers → API keys** no dashboard.
 
-!!! warning "Upload de arquivo usa outro host"
-    A operação **Files - Create a file** aponta para `https://files.stripe.com`, não para o host da conta. Ela já está configurada como `full-url` no template, com o host embutido no path — a mesma credencial da conta conectada se aplica. Não altere esse path.
+> A operação **Files - Create a file** aponta para `https://files.stripe.com`, não para o host da conta. Ela já está configurada como `full-url` no template, com o host embutido no path — a mesma credencial da conta conectada se aplica. Não altere esse path.
 
 ---
 
 ## Convenções do template
-
-Esta seção é a mais importante para usar o template. Ela descreve escolhas de modelagem que se repetem em todas as operações.
 
 ### O parâmetro `body` — form-urlencoded, não JSON
 
@@ -102,7 +97,7 @@ O template foi gerado a partir do spec `2026-07-29.dahlia` — use esse valor co
 
 ### Headers opcionais da API
 
-`Stripe-Account` e `Idempotency-Key` **não fazem parte do conector**. Headers opcionais ficam fora por padrão: preenchidos em branco pelo usuário, eles não desaparecem — chegam à API como header de valor vazio. Quando você precisar de um deles, adicione o header manualmente na operação dentro do Studio.
+`Stripe-Account` e `Idempotency-Key` **não fazem parte do conector**. Quando você precisar de um deles, adicione o header manualmente na operação dentro do Studio.
 
 | Header | Para que serve | Valor |
 | ------ | -------------- | ----- |
