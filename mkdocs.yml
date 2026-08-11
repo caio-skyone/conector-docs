@@ -21,6 +21,7 @@ nav:
   - Mailgun: connectors/mailgun.md
   - Notion: connectors/notion.md
   - Service Now: connectors/service-now.md
+  - Stripe: connectors/stripe.md
   - Twilio: connectors/twilio.md
   - Xero: connectors/xero.md
   - Zoho Books: connectors/zoho-books.md
