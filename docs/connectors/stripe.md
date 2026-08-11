@@ -94,22 +94,20 @@ O mesmo vale ao contrário: campos do exemplo que você não usa podem ser remov
 
 ### Versionamento da API
 
-Todas as 276 operações têm o header **`Stripe-Version`** parametrizado (`stripe_version`, opcional).
+Todas as 276 operações têm o header **`Stripe-Version`** parametrizado como `stripe_version`, **obrigatório neste conector**.
 
-| Valor | Comportamento |
-| ----- | ------------- |
-| vazio | Usa a versão fixada na sua conta Stripe |
-| ex. `2026-07-29.dahlia` | Fixa a versão da API nesta chamada |
+A Stripe trata o header como opcional — se ele não vier, a chamada usa a versão fixada na conta. O conector, por decisão de projeto, exige o valor: um header enviado com valor vazio chega à Stripe como `Stripe-Version: ` (chave presente, valor em branco), e depender da versão implícita da conta faz o formato das respostas mudar sozinho quando a Stripe atualiza a conta. Marcar o parâmetro como obrigatório força a escolha explícita no momento de montar o fluxo.
 
-O template foi gerado a partir do spec `2026-07-29.dahlia`. Fixar a versão explicitamente protege o fluxo de mudanças de formato quando a Stripe atualiza a versão padrão da conta.
+O template foi gerado a partir do spec `2026-07-29.dahlia` — use esse valor como ponto de partida.
 
-### Connect: agir em nome de outra conta
+### Headers opcionais da API
 
-Todas as operações têm o header **`Stripe-Account`** parametrizado (`stripe_account`, opcional). Preencha com um `acct_...` para executar a chamada em nome de uma conta conectada. Deixe vazio para operar na própria conta da plataforma.
+`Stripe-Account` e `Idempotency-Key` **não fazem parte do conector**. Headers opcionais ficam fora por padrão: preenchidos em branco pelo usuário, eles não desaparecem — chegam à API como header de valor vazio. Quando você precisar de um deles, adicione o header manualmente na operação dentro do Studio.
 
-### Idempotência
-
-Operações `POST` e `DELETE` têm o header **`Idempotency-Key`** parametrizado (`idempotency_key`, opcional). Enviar uma chave única por tentativa lógica evita cobrança duplicada quando o fluxo é reexecutado após falha de rede. **Recomendado em qualquer operação que movimente dinheiro.**
+| Header | Para que serve | Valor |
+| ------ | -------------- | ----- |
+| `Stripe-Account` | Executar a chamada em nome de uma conta conectada (Connect) | um `acct_...` |
+| `Idempotency-Key` | Evitar cobrança duplicada quando o fluxo é reexecutado após falha de rede — **recomendado em qualquer operação que movimente dinheiro** | chave única por tentativa lógica, ex. um UUID |
 
 ### Expansão de objetos
 
