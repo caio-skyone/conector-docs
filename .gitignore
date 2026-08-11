@@ -232,3 +232,4 @@ __marimo__/
 /.claude/skills/studio-connector-shared/template-pattern.md
 /.mcp.json
 # <<< skytk:managed <<<
+scratchpad/*
